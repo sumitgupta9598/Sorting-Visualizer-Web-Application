@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sorting Visualizer</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Sorting Visualizer</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarColor01"
+          aria-controls="navbarColor01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav flex-d ">
+            <li class="nav-item ">
+                <button type="button" class="btn btn-sm btn-danger mx-2 Array">New Array</button>
+            </li>
+            
+           <li class="nav-item">
+                <button type="button" class="btn btn-sm btn-success mx-2  Bubble">Bubble sort</button>
+            </li>
+            <li class="nav-item">
+                <button type="button" class="btn btn-sm btn-success mx-2 Selection">Selection Sort</button>
+            </li>
+            <li class="nav-item">
+                <button type="button" class="btn btn-sm btn-sm btn-success mx-2 Insertion">Insertion Sort</button>
+            </li>
+            <li class="nav-item">
+                <button type="button" class="btn btn-sm btn-success mx-2 Quick">Quick sort</button>
+            </li>
+            <li class="nav-item ">
+                <button type="button" class="btn btn-sm btn-success mx-2  Merge">Merge sort</button>
+            </li>
+          </ul>
+
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div id="input">
+      <span id="speed">
+       Speed
+       <input id="speedRange" type="range"  min="0" max="400" step="15" >
+      </span>
+      <span id="size">
+       Size
+       <input id="sizeRange" type="range"  min="7" max="125" >
+      </span>
+   </div>
+   <div id="bars" class="barsBox"></div>
+    
+
+    <script src="components/index.js"></script>
+  </body>
+  <script src="components/bubbleSort.js"></script>
+  <script src="components/selection.js"></script>
+  <script src="components/insertion.js"></script>
+  <script src="components/MergeSort.js"></script>
+  <script src="components/quickSort.js"></script>
+</html>
